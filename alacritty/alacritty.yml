@@ -1,0 +1,15 @@
+# Window settings
+[window]
+opacity = 0.9
+padding.x = 10
+padding.y = 10
+
+# Font settings
+[font]
+normal = { family = "bold", style = "bold" }
+size = 12
+
+# Colors (example)
+[colors]
+primary.background = "#1e1e1e"
+primary.foreground = "#ffffff"

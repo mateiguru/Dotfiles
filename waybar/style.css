@@ -1,0 +1,202 @@
+
+@import url('themes/dark.css');
+
+
+* {
+  font-family: "Font Awesome", "Fira Code";
+  font-size: 14px;
+  font-weight: bold;
+}
+
+window#waybar {
+  background-color: rgba(26, 27, 38, 0.5);
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-top: 8px transparent;
+  border-radius: 8px;
+  transition-duration: 0.5s;
+  margin: 16px 16px;
+  opacity: 0.8;
+}
+
+window#waybar.hidden {
+  opacity: 0.4;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  color: #ffffff;
+  background-color: transparent;
+  /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -3px transparent;
+  /* Avoid rounded borders under each workspace name */
+  border: none;
+  border-radius: 1;
+}
+
+#workspaces button.focused {
+color: #ffffff;
+  box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button.active {
+color: #646464;
+  box-shadow: inset 0 -2px #ffffff;
+
+ opacity: 0.4;  
+}
+
+#workspaces button.urgent {
+  background-color: #eb4d4b;
+}
+
+#window {
+  /* border-radius: 20px; */
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
+  color: #64727d;
+}
+
+#idle_inhibitor,
+#network,
+#cpu,
+#memory,
+#bluetooth,
+#pulseaudio,
+#clock {
+  padding: 0 10px;
+  color: #e5e5e5;
+  border-radius: 9.5px;
+  background-color: #24273A;;
+}
+
+#window,
+#workspaces {
+  margin: 0 4px;
+  border-radius: 7.8px;
+  background-color: #24273A;
+}
+
+#cpu {
+  color: #ffffff;
+  background-color: #24273A;
+}
+
+#memory {
+  color: #ffffff;
+  background-color: #24273A;
+}
+
+#pulseaudio {
+  color: #ffffff;
+}
+
+#clock {
+  color: #ffffff;
+  /* background-color: #14141e; */
+}
+
+#bluetooth {
+  color: #ffffff;
+}
+
+#bluetooth.disconnected {
+  color: #f53c3c;
+}
+
+#network {
+  color: #ffffff;
+}
+
+#network.disconnected {
+  color: #ff0000;
+}
+
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #eb4d4b;
+}
+
+#idle_inhibitor {
+  background-color: #24273A;
+}
+
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
+#custom-icon {
+  padding: 0 10px;
+  color: #e5e5e5;
+  border-radius: 9.5px;
+  background-color: #24273A;
+}
+
+#custom-lockdown {
+  padding: 0 10px;
+  margin: 0 4px;
+  color: #e5e5e5;
+  border-radius: 9.5px;
+  background-color: #24273A;
+}
+
+#custom-reboot {
+  padding: 0 10px;
+  color: #e5e5e5;
+  border-radius: 9.5px;
+  background-color: #24273A;
+}
+
+#custom-shutdown {
+  padding: 0 10px;
+  color: #e5e5e5;
+  border-radius: 9.5px;
+  background-color: #24273A;
+}
+
+#custom-star {
+  padding: 0 10px;
+  color: #e5e5e5;
+  border-radius: 9.5px;
+  background-color: #24273A;
+}
+
+#taskbar button {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+#custom-steam {
+  padding: 0 10px;
+  margin: 0 4px;
+  color: #e5e5e5;
+  border-radius: 9.5px;
+  background-color: #24273A;
+}
+
+#custom-firefox {
+  padding: 0 10px;
+  color: #e5e5e5;
+  border-radius: 9.5px;
+  background-color: #24273A;
+}
+
+#custom-discord {
+  padding: 0 10px;
+  color: #e5e5e5;
+  border-radius: 9.5px;
+  background-color: #24273A;
+}
+

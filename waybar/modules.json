@@ -1,0 +1,197 @@
+{
+
+
+  "hyprland/workspaces": {
+    "on-scroll-up": "hyprctl dispatch workspace r-1",
+    "on-scroll-down": "hyprctl dispatch workspace r+1",
+    "on-click": "activate",
+    "active-only": false,
+    "all-outputs": true,
+    "format": "{}",
+    "format-icons": {
+                "active": "",
+                "default": "",
+                "empty": ""
+    },
+    "persistent-workspaces": {
+      "*": 5
+    }
+  },
+
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "tooltip-format": "{title} | {app_id}",
+    "icon-size": 18,
+    "spacing": 10,
+    "all-outputs": true,
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "on-click-right": "fullscreen"
+  },
+
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "  ",
+      "deactivated": "  "
+    }
+  },
+  "network": {
+    "format": "{ifname}",
+    "format-wifi": " {signalStrength}%",
+    "format-ethernet": " {ifname}",
+    "format-disconnected": "Disconnected",
+    "tooltip-format": " {ifname} via {gwaddri}",
+    "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+    "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+  },
+
+
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+          "headphone": " ",
+          "hands-free": " ",
+          "headset": " ",
+          "phone": " ",
+          "portable": " ",
+          "car": " ",
+          "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol --tab=3"
+      },
+
+      "bluetooth": {
+        "format": "",
+        "format-disabled": "X",
+        "format-off": "X",
+        "interval": 30,
+        "on-click": "blueman-manager",
+        "format-no-controller": ""
+      },
+
+      "cpu": {
+    "format": " {usage}%",
+    "on-click": "alacritty -e btop"
+  },
+
+  "memory": {
+    "format": " {}%",
+    "on-click": "alacritty -e btop"
+  },
+
+
+  "clock": {
+    "interval": 60,
+    "align": 0,
+    "rotate": 0,
+    "format": "{:%d %b %I:%M %p}",
+    "format-alt": "{:%A <span rise='1000'> </span> %d %B %Y <span rise='1000'> </span> %I:%M %p}",
+    "timezone": "Romania/Bucharest",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    }
+},
+
+"custom/icon": {   
+"format": "",
+"on-click": "waypaper",
+"tooltip-format": "Wallpaper"
+},
+"custom/power": {   
+"format": "",
+"tooltip-format": "Power Menu"
+},
+
+  "group/power": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "not-memory",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/shutdown",
+      "custom/reboot",
+      "custom/lockdown"
+    ]
+  },
+
+  "custom/shutdown": {   
+"format": "",
+"on-click": "shutdown now",
+"tooltip-format": "Shutdown"},
+
+"custom/reboot": {   
+    "format": "",
+    "on-click": "reboot",
+    "tooltip-format": "Reboot"},
+
+    "custom/lockdown": {   
+        "format": "",
+        "on-click": "hyprlock",
+        "tooltip-format": "Lockdown"},
+
+    "custom/star": {
+        "format": "",
+        "on-click": "exec ~/.config/rofi/launchers/type-3/launcher.sh",
+        "tooltip-format": "App launcher"}, 
+
+"tray": {
+    "icon-size": 15,
+    "spacing": 10
+},
+
+"group/star": {
+  "orientation": "inherit",
+  "drawer": {
+    "transition-duration": 300,
+    "children-class": "not-memory",
+    "transition-left-to-right": true
+  },
+  "modules": [
+    "custom/firefox",
+    "custom/steam",
+    "custom/discord",
+    "custom/obs"
+  ]
+},
+
+"custom/firefox": {   
+"format": "",
+"on-click": "firefox",
+"tooltip-format": "Firefox"},
+
+"custom/steam": {   
+  "format": "",
+  "on-click": "steam",
+  "tooltip-format": "Steam"},
+
+  "custom/discord": {   
+      "format": "",
+      "on-click": "vesktop",
+      "tooltip-format": "Discord"},
+
+
+
+}
+ 

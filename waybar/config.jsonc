@@ -1,0 +1,32 @@
+{
+  "height": 30,
+  "layer": "top",
+  "margin-top": 4,
+  "margin-left": 10,
+  "margin-bottom": 0,
+  "margin-right": 10,
+  "spacing": 5,
+  "modules-left": [
+    "custom/icon",
+    "custom/star",
+    "group/star",
+    "wlr/taskbar"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "idle_inhibitor",
+    "network",
+    "cpu",
+    "memory",
+    "bluetooth",
+    "pulseaudio",
+    "tray",
+    "clock",
+    "group/power"
+  ],
+  "include": [
+    "~/.config/waybar/modules.json"
+  ]
+}
