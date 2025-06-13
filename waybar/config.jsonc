@@ -16,13 +16,13 @@
     "hyprland/workspaces"
   ],
   "modules-right": [
+    "tray",
     "idle_inhibitor",
     "network",
     "cpu",
     "memory",
     "bluetooth",
     "pulseaudio",
-    "tray",
     "clock",
     "group/power"
   ],

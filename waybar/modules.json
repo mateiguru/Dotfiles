@@ -138,7 +138,7 @@
 
   "custom/shutdown": {   
 "format": "",
-"on-click": "shutdown now",
+"on-click": "poweroff",
 "tooltip-format": "Shutdown"},
 
 "custom/reboot": {   
@@ -153,7 +153,7 @@
 
     "custom/star": {
         "format": "",
-        "on-click": "exec ~/.config/rofi/launchers/type-3/launcher.sh",
+        "on-click": "exec ~/.config/rofi/launchers/type/launcher.sh",
         "tooltip-format": "App launcher"}, 
 
 "tray": {
@@ -169,17 +169,17 @@
     "transition-left-to-right": true
   },
   "modules": [
-    "custom/firefox",
+    "custom/brave",
     "custom/steam",
     "custom/discord",
     "custom/obs"
   ]
 },
 
-"custom/firefox": {   
-"format": "",
-"on-click": "firefox",
-"tooltip-format": "Firefox"},
+"custom/brave": {   
+"format": "",
+"on-click": "brave",
+"tooltip-format": "Brave"},
 
 "custom/steam": {   
   "format": "",
@@ -188,7 +188,7 @@
 
   "custom/discord": {   
       "format": "",
-      "on-click": "vesktop",
+      "on-click": "discord",
       "tooltip-format": "Discord"},
 
 
