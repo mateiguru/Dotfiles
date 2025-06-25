@@ -169,17 +169,17 @@
     "transition-left-to-right": true
   },
   "modules": [
-    "custom/brave",
+    "custom/firefox",
     "custom/steam",
     "custom/discord",
     "custom/obs"
   ]
 },
 
-"custom/brave": {   
-"format": "",
-"on-click": "brave",
-"tooltip-format": "Brave"},
+"custom/firefox": {   
+"format": "",
+"on-click": "firefox",
+"tooltip-format": "Firefox!"},
 
 "custom/steam": {   
   "format": "",
