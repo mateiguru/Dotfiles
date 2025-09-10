@@ -104,14 +104,14 @@ dummy {
 
 /*****----- Mode Switcher -----*****/
 mode-switcher{
-    enabled:                     true;
-    spacing:                     10px;
+    enabled:                     false;
+    spacing:                     0px;
     background-color:            transparent;
     text-color:                  @foreground;
 }
 button {
     width:                       45px;
-    padding:                     12px;
+    padding: 0px;
     border-radius:               100%;
     background-color:            @background-alt;
     text-color:                  inherit;
