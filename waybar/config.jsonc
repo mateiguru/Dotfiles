@@ -6,6 +6,11 @@
         "wlr/taskbar",
         "hyprland/window"
     ],
+
+    "modules-center": [
+    
+    ],
+
     "modules-right": [
         "tray",
         "pulseaudio",
@@ -134,6 +139,9 @@
         "format": "",
         "on-click": "hyprlock",
         "tooltip-format": "Lockdown"}
+
+
+
 
 
 }
